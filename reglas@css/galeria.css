@@ -1,0 +1,61 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.galeria{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 1%;
+}
+
+.galeria img{
+    width: 300px;
+}
+/*max width y min width*/
+/*medidas de celulares*/
+
+/*@media (min-width:0) and (max-width:480px){*/
+    @media (min-width:560) { 
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: aliceblue;
+        align-items: center;
+        
+    }
+
+}
+
+/*meida para tables*/
+@media (min-width:561px) and (max-width:1080px){
+    .galeria{
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(44, 146, 235);
+    }
+
+}
+
+
+/*meida para portatil*/
+@media (min-width:1080px) and (max-width:1380px){
+    .galeria{
+        flex-direction: row;
+        justify-content: center;
+        background-color:yellow;
+    }
+
+}
+
+/*meida para mac*/
+@media (min-width:1361px) and (max-width:1800px){
+    .galeria{
+        flex-direction: ;
+        justify-content: center;
+        background-color: rgb(18, 2, 87);
+        margin: 1%;
+    }
+
+}

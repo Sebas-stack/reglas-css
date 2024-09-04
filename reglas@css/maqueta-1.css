@@ -1,0 +1,112 @@
+header,main,footer{
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+    background-color: rgb(213, 237, 237);
+}
+
+main{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+main aside, main section {
+    height: 100%;
+    border: 2px solid;
+} 
+
+main aside{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+   
+}
+main section{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+}
+main aside article img{
+    width: 100%;
+    height: 100%;
+}
+ main aside article, main section article{
+    width: 100%;
+    border: 2px solid;
+}
+main aside article:first-child,main section article:first-child{
+    height: 67%;
+    background-color: beige;
+    border: 2px solid;
+}
+main aside article:last-child,main section article:last-child{
+    height: 30%;
+    background-color: beige;
+    border: 2px solid;
+}
+
+
+main section article:first-child{
+    height: 77%;
+    background-color: rgb(254, 254, 254);
+    border: 2px solid;
+}
+main section article:last-child{
+    height: 20%;
+    background-color: rgb(218, 206, 245);
+    border: 2px solid;
+}
+
+/*medidas para celulares*/
+
+@media (max-width:560px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        border: none;
+    
+    }
+    
+}
+
+
+/*medidas para table*/
+
+@media (min-width:561px) and (max-width:561px)
+{
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+    main aside,main section{
+        width: 100%;
+ 
+    }
+    main aside{
+        height: 30%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    main section article:last-child{
+        height: 20%;
+    }
+     main aside article:first-child,
+     main aside article:last-child
+     {
+        height: 50%;
+    }
+ 
+
+ 
+
+
+}

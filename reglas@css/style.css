@@ -1,0 +1,60 @@
+.pista{
+    width: 100%;
+    height: auto;
+    display:flex ;
+    flex-direction: column;
+}
+
+.personaje, .personaje2, .personaje3, .personaje4{
+    display: inline-block;
+    /* background-color: blue; */
+    color: white;
+    width: 80px;
+    margin-bottom: 50px;
+    /* padding-bottom:40px ;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 50px; */
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: relative;
+    animation: mover 5s ease;
+    height: 70px;
+    font-size: 50px;
+}
+
+.personaje2{
+    /* background-color: rgb(3, 3, 91); */
+    animation: mover 5s ease-in ;
+}
+
+.personaje3{
+    /* background-color: rgb(48, 48, 186); */
+    animation: mover 5s ease-out;
+}
+
+.personaje4{
+    /* background-color: rgb(42, 165, 63); */
+    animation: mover 5s ease-in-out;
+}
+
+
+
+/*animar personaje*/
+
+@keyframes mover {
+    0%{ /* paso inicial*/
+        top:0;
+        left: 0;
+    }
+    50%{
+        background-color: rgb(198, 97, 97);
+        color: black;
+    }
+    100%{ /* paso final*/
+        top:0;
+        left: 500px;
+    }
+    
+}
